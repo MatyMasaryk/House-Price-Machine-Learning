@@ -1,4 +1,4 @@
-# Real Estate Prices Machine Learning
+# Predicting Real Estate Prices with Machine Learning
 Using different machine learning methods (SVM, decision tree, random forest, artificial neural network) to predict 
 prices of real estate. You can find the [data](data/train.csv), along with its [description](data/data_description.txt) in 
 the [data folder](data).
