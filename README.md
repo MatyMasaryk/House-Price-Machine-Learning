@@ -1,6 +1,6 @@
 # Predicting Real Estate Prices with Machine Learning
 Using different machine learning methods (SVM, decision tree, random forest, artificial neural network) to predict 
-prices of real estate. You can find the [data](data/train.csv), along with its [description](data/data_description.txt) in 
+prices of real estate properties. You can find the [data](data/train.csv), along with its [description](data/data_description.txt) in 
 the [data folder](data).
 
 ### Topics
@@ -41,7 +41,6 @@ It had a success rate of 0.7124 on the training set and 0.7023 on the test set. 
 
 In the following image, you can see a visualization of a tree with a maximum depth of 5.
 <img src="images\saved\tree_visual.png"/>
-[tree_visual.png](images\saved\tree_visual.png)
 
 ### SVM
 I used the SVR() function to train the SVM. Using grid search, I tried different values for the 'kernel', 'C' and 
