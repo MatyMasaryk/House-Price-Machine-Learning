@@ -53,7 +53,7 @@ training set and 0.9037 on the test set. (Mean squared error = 572 230 191). Thi
 models.
 
 #### Grid search results:
-<img src="images\saved\svm_gs_fin.png" width="400"/> <img src="images\saved\svm_gs_lin_c-6000.png" width="400"/>
+<img src="images\saved\svm_gs_fin.png" width="400"/> <img src="images\saved\svm_gs_lin_C-6000.png" width="400"/>
 
 At first glance, the poly kernel seemed to be the best, but at high values of the C parameter, the linear kernel outperformed it.
 
