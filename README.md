@@ -1,6 +1,6 @@
-# Real Estate Prices Machine Learning
+# Predicting Real Estate Prices with Machine Learning
 Using different machine learning methods (SVM, decision tree, random forest, artificial neural network) to predict 
-prices of real estate. You can find the [data](data/train.csv), along with its [description](data/data_description.txt) in 
+prices of real estate properties. You can find the [data](data/train.csv), along with its [description](data/data_description.txt) in 
 the [data folder](data).
 
 ### Topics
@@ -23,7 +23,7 @@ data and scaled the remaining data (except for the output) using MinMaxScaler.
 ## Correlation matrix
 The images below show the correlation matrix before and after removing the most correlated data.
 
-<img src="images\saved\corr_matrix.png" width="425"/> <img src="images\saved\corr_matrix_final.png" width="425"/>
+<img src="images\saved\corr_matrix.png" width="400"/> <img src="images\saved\corr_matrix_final.png" width="400"/>
 
 ## Training the models
 ### Grid search
@@ -41,7 +41,6 @@ It had a success rate of 0.7124 on the training set and 0.7023 on the test set. 
 
 In the following image, you can see a visualization of a tree with a maximum depth of 5.
 <img src="images\saved\tree_visual.png"/>
-[tree_visual.png](images\saved\tree_visual.png)
 
 ### SVM
 I used the SVR() function to train the SVM. Using grid search, I tried different values for the 'kernel', 'C' and 
@@ -54,7 +53,7 @@ training set and 0.9037 on the test set. (Mean squared error = 572 230 191). Thi
 models.
 
 #### Grid search results:
-<img src="images\saved\svm_gs_fin.png" width="425"/> <img src="images\saved\svm_gs_lin_c-6000.png" width="425"/>
+<img src="images\saved\svm_gs_fin.png" width="400"/> <img src="images\saved\svm_gs_lin_C-6000.png" width="400"/>
 
 At first glance, the poly kernel seemed to be the best, but at high values of the C parameter, the linear kernel outperformed it.
 
@@ -69,17 +68,17 @@ The best model turned out to be {'n_estimators': 200, 'criterion': 'poisson', 'm
 
 #### Importance of input features
 Below you can see the most important (left) and least important (right) input features.
-<img src="images\saved\feature_importance_best.png" width="425"> <img src="images\saved\feature_importance_worst.png" width="425">
+<img src="images\saved\feature_importance_best.png" width="400"> <img src="images\saved\feature_importance_worst.png" width="400">
 
 ## Analysis of residuals
 #### Decision tree:
-<img src="images\saved\dtr_residuals.png" width="425">
+<img src="images\saved\dtr_residuals.png" width="400">
 
 #### SVM:
-<img src="images\saved\svm_residuals.png" width="425">
+<img src="images\saved\svm_residuals.png" width="400">
 
 #### Random forest:
-<img src="images\saved\rfr_residuals.png" width="425">
+<img src="images\saved\rfr_residuals.png" width="400">
 
 ## Dimension reduction
 ### 3 selected features
